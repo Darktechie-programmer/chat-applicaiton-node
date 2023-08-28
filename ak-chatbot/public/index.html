@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ak-App - Realtime Node Socket.io Chat App</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./icons8-chat-94.png"
+        />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons8-chat-94.png">
+        <script defer src="/socket.io/socket.io.js"></script>
+        <script defer src="/js/client.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="main-container">
+                <div
+                    class="chat-logo-main"
+                    title="ak-App - Realtime Node Socket.io Chat App"
+                >
+                    <span class="chat-logo-sub-main"> ak-App </span>
+                    <img src="./assets/chatlogo.jpg" alt="logo" />
+                </div>
+
+                <!-- chat -->
+                <div class="chat-msg-container">
+                    <div class="wrapper">
+                        <ul id="msgContainer">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- send msg button -->
+            <div class="width-40">
+                <input type="text" id="messageInput" placeholder="Enter Msg" />
+                <button type="button" class="action" id="sendBtn" disabled="1">Send</button>
+            </div>
+        </section>
+    </body>
+</html>
